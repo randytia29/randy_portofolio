@@ -1,39 +1,101 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:randy_portofolio/shared/color_pallete.dart';
-import 'package:randy_portofolio/ui/widget/menu_portofolio.dart';
+import 'package:randy_portofolio/shared/image_assets.dart';
+import 'package:randy_portofolio/ui/page/about_page.dart';
+import 'package:randy_portofolio/ui/page/home_page.dart';
 
-class MainPage extends StatelessWidget {
+import '../widget/menu_button.dart';
+
+class MainPage extends StatefulWidget {
+  @override
+  _MainPageState createState() => _MainPageState();
+}
+
+class _MainPageState extends State<MainPage> {
+  int currentIndex;
+
+  @override
+  void initState() {
+    currentIndex = 0;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         color: ColorPallete.primary,
-        padding: EdgeInsets.symmetric(horizontal: 10.w),
         child: Stack(
           children: [
-            Column(
-              children: [
-                Container(
-                  width: double.infinity,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        width: 150.h,
-                        height: 150.h,
-                        child: Image.asset(
-                          'assets/dashatar.png',
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      MenuPortofolio(),
-                    ],
+            Container(
+              child: Column(
+                children: [
+                  Container(
+                    width: double.infinity,
+                    height: 125.h,
+                    padding: EdgeInsets.symmetric(horizontal: 10.w),
                   ),
-                )
-              ],
+                  Expanded(
+                    child: Builder(
+                      builder: (context) {
+                        if (currentIndex == 0) {
+                          return HomePage();
+                        } else if (currentIndex == 1) {
+                          return AboutPage();
+                        }
+                        return Container();
+                      },
+                    ),
+                  )
+                ],
+              ),
             ),
+            Container(
+              width: double.infinity,
+              height: 125.h,
+              padding: EdgeInsets.symmetric(horizontal: 10.w),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 125.h,
+                    height: 125.h,
+                    child: Image.asset(
+                      ImageAssets.dashatar,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Container(
+                    height: 50.h,
+                    child: Row(
+                      children: [
+                        MenuButton(
+                          menu: 'HOME',
+                          onPressed: () {
+                            setState(() {
+                              currentIndex = 0;
+                            });
+                          },
+                        ),
+                        SizedBox(
+                          width: 10.w,
+                        ),
+                        MenuButton(
+                          menu: 'ABOUT',
+                          onPressed: () {
+                            setState(() {
+                              currentIndex = 1;
+                            });
+                          },
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),

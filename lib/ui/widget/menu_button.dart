@@ -4,8 +4,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MenuButton extends StatelessWidget {
   final String menu;
+  final VoidCallback onPressed;
 
-  const MenuButton({Key key, this.menu}) : super(key: key);
+  MenuButton({this.menu, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class MenuButton extends StatelessWidget {
         }
         return ColorPallete.secondary;
       })),
-      onPressed: () {},
+      onPressed: onPressed,
       child: Text(
         menu,
         style: TextStyle(fontSize: 20.ssp),
