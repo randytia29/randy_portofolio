@@ -39,9 +39,13 @@ class ProjectPage extends StatelessWidget {
                       children: [
                         ProjectCard(
                           imageProject: ImageAssets.pesonaNgaliyanHebat,
+                          urlString:
+                              'https://play.google.com/store/apps/details?id=com.hebat.kecamatanngaliyan.pesonangaliyanhebat',
                         ),
                         ProjectCard(
                           imageProject: ImageAssets.glowStore,
+                          urlString:
+                              'https://play.google.com/store/apps/details?id=com.ecclesion.ella',
                         ),
                       ],
                     )
