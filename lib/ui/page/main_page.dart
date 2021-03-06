@@ -4,6 +4,7 @@ import 'package:randy_portofolio/shared/color_pallete.dart';
 import 'package:randy_portofolio/shared/image_assets.dart';
 import 'package:randy_portofolio/ui/page/about_page.dart';
 import 'package:randy_portofolio/ui/page/home_page.dart';
+import 'package:randy_portofolio/ui/page/project_page.dart';
 
 import '../widget/menu_button.dart';
 
@@ -17,7 +18,7 @@ class _MainPageState extends State<MainPage> {
 
   @override
   void initState() {
-    currentIndex = 0;
+    currentIndex = 2;
     super.initState();
   }
 
@@ -43,6 +44,8 @@ class _MainPageState extends State<MainPage> {
                           return HomePage();
                         } else if (currentIndex == 1) {
                           return AboutPage();
+                        } else if (currentIndex == 2) {
+                          return ProjectPage();
                         }
                         return Container();
                       },
@@ -87,6 +90,17 @@ class _MainPageState extends State<MainPage> {
                           onPressed: () {
                             setState(() {
                               currentIndex = 1;
+                            });
+                          },
+                        ),
+                        SizedBox(
+                          width: 10.w,
+                        ),
+                        MenuButton(
+                          menu: 'PROJECT',
+                          onPressed: () {
+                            setState(() {
+                              currentIndex = 2;
                             });
                           },
                         )
