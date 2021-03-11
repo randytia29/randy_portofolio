@@ -18,7 +18,7 @@ class _MainPageState extends State<MainPage> {
 
   @override
   void initState() {
-    currentIndex = 2;
+    currentIndex = 0;
     super.initState();
   }
 

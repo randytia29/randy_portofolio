@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:randy_portofolio/shared/image_assets.dart';
+import 'package:randy_portofolio/shared/launch_url.dart';
 import 'package:randy_portofolio/ui/widget/project_card.dart';
 
 class ProjectPage extends StatelessWidget {
@@ -39,13 +40,42 @@ class ProjectPage extends StatelessWidget {
                       children: [
                         ProjectCard(
                           imageProject: ImageAssets.pesonaNgaliyanHebat,
-                          urlString:
-                              'https://play.google.com/store/apps/details?id=com.hebat.kecamatanngaliyan.pesonangaliyanhebat',
+                          onTap: () async {
+                            await LaunchURL.openURL(
+                                'https://play.google.com/store/apps/details?id=com.hebat.kecamatanngaliyan.pesonangaliyanhebat');
+                          },
                         ),
                         ProjectCard(
                           imageProject: ImageAssets.glowStore,
-                          urlString:
-                              'https://play.google.com/store/apps/details?id=com.ecclesion.ella',
+                          onTap: () async {
+                            await LaunchURL.openURL(
+                                'https://play.google.com/store/apps/details?id=com.ecclesion.ella');
+                          },
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 50.h,
+                ),
+                Column(
+                  children: [
+                    Text(
+                      'Web',
+                      style: TextStyle(
+                          fontSize: 25.ssp, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 10.h,
+                    ),
+                    Wrap(
+                      spacing: 5.w,
+                      runSpacing: 5.h,
+                      children: [
+                        ProjectCard(
+                          imageProject: ImageAssets.dashatar,
+                          onTap: null,
                         ),
                       ],
                     )
