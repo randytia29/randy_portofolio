@@ -16,15 +16,15 @@ class HomeLeftSide extends StatelessWidget {
           children: [
             Text(
               'Hello',
-              style: TextStyle(fontSize: 35.ssp),
+              style: TextStyle(fontSize: 35.sp),
             ),
             Text(
               "I'm Randytia Akbar",
-              style: TextStyle(fontSize: 35.ssp, color: Colors.white),
+              style: TextStyle(fontSize: 35.sp, color: Colors.white),
             ),
             Text(
               'Flutter Developer',
-              style: TextStyle(fontSize: 25.ssp),
+              style: TextStyle(fontSize: 25.sp),
             ),
             Container(
               height: 2.h,
@@ -36,7 +36,7 @@ class HomeLeftSide extends StatelessWidget {
             ),
             Text(
               'Welcome to My portfolio',
-              style: TextStyle(fontSize: 15.ssp),
+              style: TextStyle(fontSize: 15.sp),
             ),
           ],
         ),

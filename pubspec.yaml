@@ -25,8 +25,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_open_whatsapp: ^0.1.2
-  flutter_screenutil: ^4.0.3+2
-  get: ^3.25.6
+  flutter_screenutil: ^5.0.0
+  get: ^4.1.4
   url_launcher: ^6.0.2
 
 dev_dependencies:

@@ -16,7 +16,7 @@ class AboutPage extends StatelessWidget {
           child: ListView(children: [
             Text(
               'About',
-              style: TextStyle(fontSize: 40.ssp, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold),
             ),
             SizedBox(
               height: 20.h,
@@ -73,7 +73,7 @@ class AboutPage extends StatelessWidget {
                 Text(
                   'Experience Work',
                   style: TextStyle(
-                      fontSize: 35.ssp,
+                      fontSize: 35.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.grey[400]),
                 ),
@@ -82,22 +82,22 @@ class AboutPage extends StatelessWidget {
                 ),
                 Text(
                   'Kelurahan Kalipancur - IT Staff',
-                  style: TextStyle(fontSize: 25.ssp),
+                  style: TextStyle(fontSize: 25.sp),
                 ),
                 Text(
                   'January 2018 – December 2019',
-                  style: TextStyle(fontSize: 20.ssp),
+                  style: TextStyle(fontSize: 20.sp),
                 ),
                 SizedBox(
                   height: 20.h,
                 ),
                 Text(
                   'Ella Skin Care - Flutter Engineer',
-                  style: TextStyle(fontSize: 25.ssp),
+                  style: TextStyle(fontSize: 25.sp),
                 ),
                 Text(
                   'July 2020 – Now',
-                  style: TextStyle(fontSize: 20.ssp),
+                  style: TextStyle(fontSize: 20.sp),
                 ),
               ],
             ),
@@ -110,7 +110,7 @@ class AboutPage extends StatelessWidget {
                 Text(
                   'Skill',
                   style: TextStyle(
-                      fontSize: 35.ssp,
+                      fontSize: 35.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.grey[400]),
                 ),
@@ -119,21 +119,21 @@ class AboutPage extends StatelessWidget {
                 ),
                 Text(
                   'Flutter',
-                  style: TextStyle(fontSize: 25.ssp),
+                  style: TextStyle(fontSize: 25.sp),
                 ),
                 SizedBox(
                   height: 10.h,
                 ),
                 Text(
                   'BLoC',
-                  style: TextStyle(fontSize: 25.ssp),
+                  style: TextStyle(fontSize: 25.sp),
                 ),
                 SizedBox(
                   height: 10.h,
                 ),
                 Text(
                   'Firebase',
-                  style: TextStyle(fontSize: 25.ssp),
+                  style: TextStyle(fontSize: 25.sp),
                 ),
               ],
             )

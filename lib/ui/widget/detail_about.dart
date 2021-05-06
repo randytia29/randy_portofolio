@@ -16,7 +16,7 @@ class DetailAbout extends StatelessWidget {
         Text(
           title,
           style: TextStyle(
-              fontSize: 35.ssp,
+              fontSize: 35.sp,
               fontWeight: FontWeight.w500,
               color: Colors.grey[400]),
         ),
@@ -24,7 +24,7 @@ class DetailAbout extends StatelessWidget {
           onTap: onTap,
           child: Text(
             subtitle,
-            style: TextStyle(fontSize: 30.ssp),
+            style: TextStyle(fontSize: 30.sp),
           ),
         )
       ],

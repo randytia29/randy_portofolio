@@ -21,7 +21,7 @@ class MenuButton extends StatelessWidget {
       onPressed: onPressed,
       child: Text(
         menu,
-        style: TextStyle(fontSize: 20.ssp),
+        style: TextStyle(fontSize: 20.sp),
       ),
     );
   }

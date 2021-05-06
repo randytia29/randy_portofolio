@@ -19,7 +19,7 @@ class ProjectPage extends StatelessWidget {
                 Text(
                   'Projects',
                   style:
-                      TextStyle(fontSize: 40.ssp, fontWeight: FontWeight.bold),
+                      TextStyle(fontSize: 40.sp, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
                   height: 20.h,
@@ -29,7 +29,7 @@ class ProjectPage extends StatelessWidget {
                     Text(
                       'Mobile',
                       style: TextStyle(
-                          fontSize: 25.ssp, fontWeight: FontWeight.bold),
+                          fontSize: 25.sp, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
                       height: 10.h,
@@ -64,7 +64,7 @@ class ProjectPage extends StatelessWidget {
                     Text(
                       'Web',
                       style: TextStyle(
-                          fontSize: 25.ssp, fontWeight: FontWeight.bold),
+                          fontSize: 25.sp, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
                       height: 10.h,
