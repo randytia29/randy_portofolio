@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:randy_portofolio/shared/launch_url.dart';
 import 'package:randy_portofolio/ui/widget/detail_about.dart';
-import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
 
 class AboutPage extends StatelessWidget {
   @override
@@ -40,10 +39,7 @@ class AboutPage extends StatelessWidget {
             DetailAbout(
               title: 'Phone',
               subtitle: '+6285640061290',
-              onTap: () async {
-                await FlutterOpenWhatsapp.sendSingleMessage(
-                    '6285640061290', 'Hello');
-              },
+              onTap: null,
             ),
             SizedBox(
               height: 30.h,
@@ -92,11 +88,22 @@ class AboutPage extends StatelessWidget {
                   height: 20.h,
                 ),
                 Text(
-                  'Ella Skin Care - Flutter Engineer',
+                  'Ella Skin Care - Flutter Developer',
                   style: TextStyle(fontSize: 25.sp),
                 ),
                 Text(
-                  'July 2020 – Now',
+                  'July 2020 – April 2021',
+                  style: TextStyle(fontSize: 20.sp),
+                ),
+                SizedBox(
+                  height: 20.h,
+                ),
+                Text(
+                  'Imperial Healthtech - Flutter Developer',
+                  style: TextStyle(fontSize: 25.sp),
+                ),
+                Text(
+                  'April 2021 – August 2021',
                   style: TextStyle(fontSize: 20.sp),
                 ),
               ],
