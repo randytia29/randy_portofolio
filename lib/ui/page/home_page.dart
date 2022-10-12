@@ -17,6 +17,8 @@ class HomePage extends StatelessWidget {
               height: 500.h,
               width: 250.w,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [HomeLeftSide(), HomeRightSide()],
               ),
             ),

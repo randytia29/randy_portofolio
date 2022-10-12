@@ -4,40 +4,29 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class HomeLeftSide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        padding: EdgeInsets.only(
-          top: 75.h,
-          left: 20.w,
-          right: 20.w,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+    return Padding(
+      padding: EdgeInsets.only(top: 50.h),
+      child: RichText(
+        text: TextSpan(
+          text: 'Hello\n',
+          style: TextStyle(fontSize: 35.sp),
           children: [
-            Text(
-              'Hello',
-              style: TextStyle(fontSize: 35.sp),
+            TextSpan(
+              text: 'I\'m Randytia Akbar\n',
+              style: TextStyle(color: Colors.white),
             ),
-            Text(
-              "I'm Randytia Akbar",
-              style: TextStyle(fontSize: 35.sp, color: Colors.white),
+            TextSpan(
+              text: 'Flutter Developer\n',
+              style: TextStyle(
+                fontSize: 25.sp,
+                decoration: TextDecoration.underline,
+                decorationStyle: TextDecorationStyle.solid,
+              ),
             ),
-            Text(
-              'Flutter Developer',
-              style: TextStyle(fontSize: 25.sp),
-            ),
-            Container(
-              height: 2.h,
-              width: 55.w,
-              color: Colors.black,
-            ),
-            SizedBox(
-              height: 10.h,
-            ),
-            Text(
-              'Welcome to My portfolio',
+            TextSpan(
+              text: 'Welcome to My portfolio',
               style: TextStyle(fontSize: 15.sp),
-            ),
+            )
           ],
         ),
       ),
