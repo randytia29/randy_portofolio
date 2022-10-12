@@ -11,6 +11,7 @@ class HomeLeftSide extends StatelessWidget {
         text: TextSpan(
           text: 'Hello\n',
           style: TextStyle(
+            color: Colors.black,
             fontSize: getValueForScreenType(
               context: context,
               mobile: 45.sp,
