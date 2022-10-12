@@ -7,8 +7,5 @@ class LaunchURL {
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri);
     }
-    // if (await canLaunch(urlString)) {
-    //   await launch(urlString, forceWebView: true, enableJavaScript: true);
-    // }
   }
 }
