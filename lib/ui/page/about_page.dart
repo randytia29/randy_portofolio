@@ -8,6 +8,8 @@ import '../widget/experience_work.dart';
 import '../widget/skill.dart';
 
 class AboutPage extends StatelessWidget {
+  const AboutPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -34,28 +36,28 @@ class AboutPage extends StatelessWidget {
                 SizedBox(
                   height: 20.h,
                 ),
-                DetailAbout(
+                const DetailAbout(
                   title: 'Name',
                   subtitle: 'Randytia Akbar',
                 ),
                 SizedBox(
                   height: 30.h,
                 ),
-                DetailAbout(
+                const DetailAbout(
                   title: 'Email',
                   subtitle: 'randytia.akbar@gmail.com',
                 ),
                 SizedBox(
                   height: 30.h,
                 ),
-                DetailAbout(
+                const DetailAbout(
                   title: 'Phone',
                   subtitle: '+6285640061290',
                 ),
                 SizedBox(
                   height: 30.h,
                 ),
-                DetailAbout(
+                const DetailAbout(
                   title: 'Domicile',
                   subtitle: 'Semarang City, Indonesia',
                 ),
@@ -74,11 +76,11 @@ class AboutPage extends StatelessWidget {
                 SizedBox(
                   height: 30.h,
                 ),
-                ExperienceWork(),
+                const ExperienceWork(),
                 SizedBox(
                   height: 30.h,
                 ),
-                Skill()
+                const Skill()
               ],
             ),
           )

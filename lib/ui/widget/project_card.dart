@@ -5,7 +5,7 @@ class ProjectCard extends StatelessWidget {
   final String imageProject;
   final VoidCallback? onTap;
 
-  ProjectCard({required this.imageProject, this.onTap});
+  const ProjectCard({super.key, required this.imageProject, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,8 @@ class ProjectCard extends StatelessWidget {
         width: 150.h,
         height: 150.h,
         padding: EdgeInsets.all(20.h),
-        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+        decoration:
+            const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
         child: Center(
           child: Image.asset(
             imageProject,

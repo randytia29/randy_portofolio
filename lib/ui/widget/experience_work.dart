@@ -30,21 +30,21 @@ class ExperienceWork extends StatelessWidget {
         SizedBox(
           height: 10.h,
         ),
-        ExperienceDetail(
+        const ExperienceDetail(
           title: 'Kelurahan Kalipancur - IT Staff',
           subtitle: 'January 2018 – December 2019',
         ),
         SizedBox(
           height: 20.h,
         ),
-        ExperienceDetail(
+        const ExperienceDetail(
           title: 'Ella Skin Care - Flutter Developer',
           subtitle: 'July 2020 – April 2021',
         ),
         SizedBox(
           height: 20.h,
         ),
-        ExperienceDetail(
+        const ExperienceDetail(
           title: 'Imperial Healthtech - Flutter Developer',
           subtitle: 'April 2021 – August 2021',
         ),

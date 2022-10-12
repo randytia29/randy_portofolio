@@ -30,15 +30,15 @@ class Skill extends StatelessWidget {
         SizedBox(
           height: 10.h,
         ),
-        SkillDetail(title: 'Flutter'),
+        const SkillDetail(title: 'Flutter'),
         SizedBox(
           height: 10.h,
         ),
-        SkillDetail(title: 'BLoC'),
+        const SkillDetail(title: 'BLoC'),
         SizedBox(
           height: 10.h,
         ),
-        SkillDetail(title: 'Firebase'),
+        const SkillDetail(title: 'Firebase'),
       ],
     );
   }

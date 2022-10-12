@@ -4,6 +4,8 @@ import 'package:randy_portofolio/ui/widget/home_left_side.dart';
 import 'package:randy_portofolio/ui/widget/home_right_side.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,18 +15,16 @@ class HomePage extends StatelessWidget {
         children: [
           Align(
             alignment: Alignment.center,
-            child: Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  HomeLeftSide(),
-                  SizedBox(
-                    width: 50.w,
-                  ),
-                  HomeRightSide()
-                ],
-              ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const HomeLeftSide(),
+                SizedBox(
+                  width: 50.w,
+                ),
+                const HomeRightSide()
+              ],
             ),
           ),
         ],

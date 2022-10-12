@@ -4,9 +4,11 @@ import 'package:randy_portofolio/shared/image_assets.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeRightSide extends StatelessWidget {
+  const HomeRightSide({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: getValueForScreenType(
         context: context,
         mobile: 500.h,

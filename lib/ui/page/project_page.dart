@@ -5,6 +5,8 @@ import 'package:randy_portofolio/shared/launch_url.dart';
 import 'package:randy_portofolio/ui/widget/project_card.dart';
 
 class ProjectPage extends StatelessWidget {
+  const ProjectPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -76,7 +78,7 @@ class ProjectPage extends StatelessWidget {
                     Wrap(
                       spacing: 5.w,
                       runSpacing: 5.h,
-                      children: [
+                      children: const [
                         ProjectCard(
                           imageProject: ImageAssets.dashatar,
                         ),

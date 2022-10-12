@@ -9,8 +9,10 @@ import 'package:randy_portofolio/ui/page/project_page.dart';
 import '../widget/menu_button.dart';
 
 class MainPage extends StatefulWidget {
+  const MainPage({super.key});
+
   @override
-  _MainPageState createState() => _MainPageState();
+  State<MainPage> createState() => _MainPageState();
 }
 
 class _MainPageState extends State<MainPage> {
@@ -29,30 +31,28 @@ class _MainPageState extends State<MainPage> {
         color: ColorPallete.primary,
         child: Stack(
           children: [
-            Container(
-              child: Column(
-                children: [
-                  Container(
-                    width: double.infinity,
-                    height: 125.h,
-                    padding: EdgeInsets.symmetric(horizontal: 10.w),
+            Column(
+              children: [
+                Container(
+                  width: double.infinity,
+                  height: 125.h,
+                  padding: EdgeInsets.symmetric(horizontal: 10.w),
+                ),
+                Expanded(
+                  child: Builder(
+                    builder: (context) {
+                      if (currentIndex == 0) {
+                        return const HomePage();
+                      } else if (currentIndex == 1) {
+                        return const AboutPage();
+                      } else if (currentIndex == 2) {
+                        return const ProjectPage();
+                      }
+                      return Container();
+                    },
                   ),
-                  Expanded(
-                    child: Builder(
-                      builder: (context) {
-                        if (currentIndex == 0) {
-                          return HomePage();
-                        } else if (currentIndex == 1) {
-                          return AboutPage();
-                        } else if (currentIndex == 2) {
-                          return ProjectPage();
-                        }
-                        return Container();
-                      },
-                    ),
-                  )
-                ],
-              ),
+                )
+              ],
             ),
             Container(
               width: double.infinity,
@@ -62,7 +62,7 @@ class _MainPageState extends State<MainPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
+                  SizedBox(
                     width: 125.h,
                     height: 125.h,
                     child: Image.asset(
@@ -70,7 +70,7 @@ class _MainPageState extends State<MainPage> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     height: 125.h,
                     child: Row(
                       children: [

@@ -7,7 +7,8 @@ class DetailAbout extends StatelessWidget {
   final String subtitle;
   final VoidCallback? onTap;
 
-  DetailAbout({required this.title, required this.subtitle, this.onTap});
+  const DetailAbout(
+      {super.key, required this.title, required this.subtitle, this.onTap});
 
   @override
   Widget build(BuildContext context) {

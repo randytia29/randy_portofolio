@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeLeftSide extends StatelessWidget {
+  const HomeLeftSide({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -20,7 +22,7 @@ class HomeLeftSide extends StatelessWidget {
             ),
           ),
           children: [
-            TextSpan(
+            const TextSpan(
               text: 'I\'m Randytia Akbar\n',
               style: TextStyle(color: Colors.white),
             ),
