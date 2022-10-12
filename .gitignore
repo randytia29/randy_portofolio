@@ -32,6 +32,7 @@
 /build/
 
 # Web related
+.firebase/
 
 # Symbolication related
 app.*.symbols
