@@ -25,6 +25,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_screenutil: ^5.5.4
+  responsive_builder: ^0.4.3
   url_launcher: ^6.1.6
 
 dev_dependencies:

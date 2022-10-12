@@ -71,7 +71,7 @@ class _MainPageState extends State<MainPage> {
                     ),
                   ),
                   Container(
-                    height: 50.h,
+                    height: 125.h,
                     child: Row(
                       children: [
                         MenuButton(

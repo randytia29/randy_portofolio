@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeLeftSide extends StatelessWidget {
   @override
@@ -9,7 +10,14 @@ class HomeLeftSide extends StatelessWidget {
       child: RichText(
         text: TextSpan(
           text: 'Hello\n',
-          style: TextStyle(fontSize: 35.sp),
+          style: TextStyle(
+            fontSize: getValueForScreenType(
+              context: context,
+              mobile: 45.sp,
+              tablet: 60.sp,
+              desktop: 75.sp,
+            ),
+          ),
           children: [
             TextSpan(
               text: 'I\'m Randytia Akbar\n',
@@ -18,14 +26,26 @@ class HomeLeftSide extends StatelessWidget {
             TextSpan(
               text: 'Flutter Developer\n',
               style: TextStyle(
-                fontSize: 25.sp,
+                fontSize: getValueForScreenType(
+                  context: context,
+                  mobile: 35.sp,
+                  tablet: 50.sp,
+                  desktop: 65.sp,
+                ),
                 decoration: TextDecoration.underline,
                 decorationStyle: TextDecorationStyle.solid,
               ),
             ),
             TextSpan(
               text: 'Welcome to My portfolio',
-              style: TextStyle(fontSize: 15.sp),
+              style: TextStyle(
+                fontSize: getValueForScreenType(
+                  context: context,
+                  mobile: 25.sp,
+                  tablet: 30.sp,
+                  desktop: 45.sp,
+                ),
+              ),
             )
           ],
         ),

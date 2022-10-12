@@ -14,12 +14,16 @@ class HomePage extends StatelessWidget {
           Align(
             alignment: Alignment.center,
             child: Container(
-              height: 500.h,
-              width: 250.w,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [HomeLeftSide(), HomeRightSide()],
+                children: [
+                  HomeLeftSide(),
+                  SizedBox(
+                    width: 50.w,
+                  ),
+                  HomeRightSide()
+                ],
               ),
             ),
           ),
