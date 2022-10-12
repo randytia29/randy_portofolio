@@ -21,12 +21,11 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  cupertino_icons: ^1.0.5
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.3
-  flutter_screenutil: ^5.0.0+2
-  get: ^4.3.8
-  url_launcher: ^6.0.12
+  flutter_screenutil: ^5.5.4
+  url_launcher: ^6.1.6
 
 dev_dependencies:
   flutter_test:

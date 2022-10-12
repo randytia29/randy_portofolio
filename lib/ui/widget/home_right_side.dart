@@ -11,7 +11,7 @@ class HomeRightSide extends StatelessWidget {
           children: [
             Center(
               child: Container(
-                color: Colors.blue[100],
+                // color: Colors.blue[100],
                 width: 70.w,
                 child: Image.asset(
                   ImageAssets.photo,
