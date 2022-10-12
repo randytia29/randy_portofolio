@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-class DetailAbout extends StatelessWidget {
-  final String title;
-  final String subtitle;
-  final VoidCallback? onTap;
+import 'skill_detail.dart';
 
-  DetailAbout({required this.title, required this.subtitle, this.onTap});
+class Skill extends StatelessWidget {
+  const Skill({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class DetailAbout extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          title,
+          'Skill',
           style: TextStyle(
             fontSize: getValueForScreenType(
               context: context,
@@ -27,20 +27,18 @@ class DetailAbout extends StatelessWidget {
             color: Colors.grey[400],
           ),
         ),
-        GestureDetector(
-          onTap: onTap,
-          child: Text(
-            subtitle,
-            style: TextStyle(
-              fontSize: getValueForScreenType(
-                context: context,
-                mobile: 30.sp,
-                tablet: 40.sp,
-                desktop: 50.sp,
-              ),
-            ),
-          ),
-        )
+        SizedBox(
+          height: 10.h,
+        ),
+        SkillDetail(title: 'Flutter'),
+        SizedBox(
+          height: 10.h,
+        ),
+        SkillDetail(title: 'BLoC'),
+        SizedBox(
+          height: 10.h,
+        ),
+        SkillDetail(title: 'Firebase'),
       ],
     );
   }

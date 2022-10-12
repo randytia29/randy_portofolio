@@ -29,7 +29,9 @@ class ProjectPage extends StatelessWidget {
                     Text(
                       'Mobile',
                       style: TextStyle(
-                          fontSize: 25.sp, fontWeight: FontWeight.bold),
+                        fontSize: 25.sp,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     SizedBox(
                       height: 10.h,
@@ -64,7 +66,9 @@ class ProjectPage extends StatelessWidget {
                     Text(
                       'Web',
                       style: TextStyle(
-                          fontSize: 25.sp, fontWeight: FontWeight.bold),
+                        fontSize: 25.sp,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     SizedBox(
                       height: 10.h,
@@ -75,7 +79,6 @@ class ProjectPage extends StatelessWidget {
                       children: [
                         ProjectCard(
                           imageProject: ImageAssets.dashatar,
-                          onTap: null,
                         ),
                       ],
                     )

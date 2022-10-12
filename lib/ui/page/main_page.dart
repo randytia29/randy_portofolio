@@ -14,7 +14,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int currentIndex;
+  late int currentIndex;
 
   @override
   void initState() {

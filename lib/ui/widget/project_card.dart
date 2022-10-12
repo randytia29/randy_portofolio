@@ -3,9 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ProjectCard extends StatelessWidget {
   final String imageProject;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
 
-  ProjectCard({this.imageProject, this.onTap});
+  ProjectCard({required this.imageProject, this.onTap});
 
   @override
   Widget build(BuildContext context) {

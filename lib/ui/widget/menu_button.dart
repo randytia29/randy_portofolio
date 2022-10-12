@@ -7,7 +7,7 @@ class MenuButton extends StatelessWidget {
   final String menu;
   final VoidCallback onPressed;
 
-  MenuButton({this.menu, this.onPressed});
+  MenuButton({required this.menu, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
