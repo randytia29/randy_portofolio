@@ -8,26 +8,22 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: EdgeInsets.symmetric(horizontal: 10.w),
-      child: Stack(
-        children: [
-          Align(
-            alignment: Alignment.center,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const HomeLeftSide(),
-                SizedBox(
-                  width: 50.w,
-                ),
-                const HomeRightSide()
-              ],
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        padding: EdgeInsets.symmetric(horizontal: 10.w),
+        alignment: Alignment.center,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const HomeLeftSide(),
+            SizedBox(
+              width: 50.w,
             ),
-          ),
-        ],
+            const HomeRightSide()
+          ],
+        ),
       ),
     );
   }
