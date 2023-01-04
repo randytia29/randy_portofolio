@@ -48,6 +48,13 @@ class ExperienceWork extends StatelessWidget {
           title: 'Imperial Healthtech - Flutter Developer',
           subtitle: 'April 2021 – August 2021',
         ),
+        SizedBox(
+          height: 20.h,
+        ),
+        const ExperienceDetail(
+          title: 'Abarobotics - Mobile Application Developer',
+          subtitle: 'October 2021 – Now',
+        ),
       ],
     );
   }

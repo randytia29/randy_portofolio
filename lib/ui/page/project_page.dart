@@ -51,6 +51,25 @@ class ProjectPage extends StatelessWidget {
                         'https://play.google.com/store/apps/details?id=com.ecclesion.ella');
                   },
                 ),
+                const ProjectCard(
+                  imageProject: ImageAssets.ports,
+                ),
+                const ProjectCard(
+                  imageProject: ImageAssets.pmc,
+                ),
+                const ProjectCard(
+                  imageProject: ImageAssets.rswn,
+                ),
+                ProjectCard(
+                  imageProject: ImageAssets.hib,
+                  onTap: () async {
+                    await LaunchURL.openURL(
+                        'https://play.google.com/store/apps/details?id=com.abarobotics.officetembalangmobile');
+                  },
+                ),
+                const ProjectCard(
+                  imageProject: ImageAssets.hermina,
+                )
               ],
             ),
             SizedBox(

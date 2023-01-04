@@ -29,7 +29,7 @@ class CategoryProject extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 10.h,
+          height: 20.h,
         ),
         Wrap(
           spacing: 5.w,

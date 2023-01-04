@@ -33,6 +33,5 @@ class CustomRouter {
       ),
     ],
     initialLocation: '/',
-    debugLogDiagnostics: true,
   );
 }

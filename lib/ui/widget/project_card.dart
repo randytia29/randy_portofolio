@@ -12,15 +12,15 @@ class ProjectCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 150.h,
-        height: 150.h,
-        padding: EdgeInsets.all(20.h),
+        width: 200.h,
+        height: 200.h,
+        padding: EdgeInsets.all(30.h),
         decoration:
             const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
         child: Center(
           child: Image.asset(
             imageProject,
-            fit: BoxFit.cover,
+            // fit: BoxFit.cover,
           ),
         ),
       ),
