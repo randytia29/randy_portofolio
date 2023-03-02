@@ -10,4 +10,5 @@ class ImageAssets {
   static const hib = 'assets/hib.jpg';
   static const hermina = 'assets/hermina.png';
   static const mahaKarya = 'assets/maha_karya.png';
+  static const fisiphoria = 'assets/fisiphoria.png';
 }
