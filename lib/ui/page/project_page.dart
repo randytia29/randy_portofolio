@@ -69,6 +69,9 @@ class ProjectPage extends StatelessWidget {
                 ),
                 const ProjectCard(
                   imageProject: ImageAssets.hermina,
+                ),
+                const ProjectCard(
+                  imageProject: ImageAssets.mahaKarya,
                 )
               ],
             ),
