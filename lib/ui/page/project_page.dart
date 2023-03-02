@@ -75,6 +75,12 @@ class ProjectPage extends StatelessWidget {
                 ),
                 const ProjectCard(
                   imageProject: ImageAssets.fisiphoria,
+                ),
+                const ProjectCard(
+                  imageProject: ImageAssets.wifkain,
+                ),
+                const ProjectCard(
+                  imageProject: ImageAssets.pln,
                 )
               ],
             ),
