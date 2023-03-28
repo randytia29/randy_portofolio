@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../shared/image_assets.dart';
+import '../theme_manager/asset_manager.dart';
 import 'menu_button.dart';
 
 class CustomAppbar extends StatelessWidget {
@@ -24,7 +24,7 @@ class CustomAppbar extends StatelessWidget {
             width: 125.h,
             height: 125.h,
             child: Image.asset(
-              ImageAssets.dashatar,
+              AssetManager.dashatar,
               fit: BoxFit.cover,
             ),
           ),

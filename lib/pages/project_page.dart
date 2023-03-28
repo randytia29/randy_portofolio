@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:randy_portofolio/shared/image_assets.dart';
-import 'package:randy_portofolio/shared/launch_url.dart';
-import 'package:randy_portofolio/ui/widget/project_card.dart';
+import 'package:randy_portofolio/theme_manager/asset_manager.dart';
+import 'package:randy_portofolio/widgets/project_card.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-import '../widget/category_project.dart';
+import '../utils/launch_url.dart';
+import '../widgets/category_project.dart';
 
 class ProjectPage extends StatelessWidget {
   const ProjectPage({super.key});
@@ -38,49 +38,49 @@ class ProjectPage extends StatelessWidget {
               title: 'Mobile',
               projects: [
                 ProjectCard(
-                  imageProject: ImageAssets.pesonaNgaliyanHebat,
+                  imageProject: AssetManager.pesonaNgaliyanHebat,
                   onTap: () async {
                     await LaunchURL.openURL(
                         'https://play.google.com/store/apps/details?id=com.hebat.kecamatanngaliyan.pesonangaliyanhebat');
                   },
                 ),
                 ProjectCard(
-                  imageProject: ImageAssets.glowStore,
+                  imageProject: AssetManager.glowStore,
                   onTap: () async {
                     await LaunchURL.openURL(
                         'https://play.google.com/store/apps/details?id=com.ecclesion.ella');
                   },
                 ),
                 const ProjectCard(
-                  imageProject: ImageAssets.ports,
+                  imageProject: AssetManager.ports,
                 ),
                 const ProjectCard(
-                  imageProject: ImageAssets.pmc,
+                  imageProject: AssetManager.pmc,
                 ),
                 const ProjectCard(
-                  imageProject: ImageAssets.rswn,
+                  imageProject: AssetManager.rswn,
                 ),
                 ProjectCard(
-                  imageProject: ImageAssets.hib,
+                  imageProject: AssetManager.hib,
                   onTap: () async {
                     await LaunchURL.openURL(
                         'https://play.google.com/store/apps/details?id=com.abarobotics.officetembalangmobile');
                   },
                 ),
                 const ProjectCard(
-                  imageProject: ImageAssets.hermina,
+                  imageProject: AssetManager.hermina,
                 ),
                 const ProjectCard(
-                  imageProject: ImageAssets.mahaKarya,
+                  imageProject: AssetManager.mahaKarya,
                 ),
                 const ProjectCard(
-                  imageProject: ImageAssets.fisiphoria,
+                  imageProject: AssetManager.fisiphoria,
                 ),
                 const ProjectCard(
-                  imageProject: ImageAssets.wifkain,
+                  imageProject: AssetManager.wifkain,
                 ),
                 const ProjectCard(
-                  imageProject: ImageAssets.pln,
+                  imageProject: AssetManager.pln,
                 )
               ],
             ),
@@ -91,7 +91,7 @@ class ProjectPage extends StatelessWidget {
               title: 'Web',
               projects: [
                 ProjectCard(
-                  imageProject: ImageAssets.dashatar,
+                  imageProject: AssetManager.dashatar,
                 ),
               ],
             ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:randy_portofolio/shared/color_pallete.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import '../theme_manager/color_manager.dart';
 
 class MenuButton extends StatelessWidget {
   final String menu;
@@ -15,9 +16,9 @@ class MenuButton extends StatelessWidget {
       style: ButtonStyle(
         foregroundColor: MaterialStateProperty.resolveWith((states) {
           if (states.contains(MaterialState.hovered)) {
-            return ColorPallete.hover;
+            return ColorManager.hover;
           }
-          return ColorPallete.secondary;
+          return ColorManager.secondary;
         }),
       ),
       onPressed: onPressed,

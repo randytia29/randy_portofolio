@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
-import 'package:randy_portofolio/ui/page/about_page.dart';
-import 'package:randy_portofolio/ui/page/home_page.dart';
-import 'package:randy_portofolio/ui/page/main_page.dart';
-import 'package:randy_portofolio/ui/page/project_page.dart';
+import 'package:randy_portofolio/pages/about_page.dart';
+import 'package:randy_portofolio/pages/home_page.dart';
+import 'package:randy_portofolio/pages/main_page.dart';
+import 'package:randy_portofolio/pages/project_page.dart';
 
 class CustomRouter {
   static GoRouter router = GoRouter(

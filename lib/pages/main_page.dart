@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widget/custom_appbar.dart';
+import '../widgets/custom_appbar.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key, required this.child});

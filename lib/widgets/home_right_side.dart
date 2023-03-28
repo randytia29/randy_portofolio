@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:randy_portofolio/shared/image_assets.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import '../theme_manager/asset_manager.dart';
 
 class HomeRightSide extends StatelessWidget {
   const HomeRightSide({super.key});
@@ -16,7 +17,7 @@ class HomeRightSide extends StatelessWidget {
         desktop: 800.h,
       ),
       child: Image.asset(
-        ImageAssets.photo,
+        AssetManager.photo,
         fit: BoxFit.contain,
       ),
     );
