@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:randy_portofolio/pages/mobile/mobile_home_page.dart';
 
 import 'theme_manager/theme_data_manager.dart';
 import 'utils/router.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
 
         return MaterialApp(
           theme: getApplicationThemeData(),
+          home: const MobileHomePage(),
         );
       },
     );
