@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
+import 'package:randy_portofolio/utils/router.dart';
 
 import '../theme_manager/asset_manager.dart';
 import 'menu_button.dart';
@@ -35,7 +36,7 @@ class CustomAppbar extends StatelessWidget {
                 MenuButton(
                   menu: 'HOME',
                   onPressed: () {
-                    context.goNamed('home');
+                    context.goNamed(CustomRouter.webHomePath);
                   },
                 ),
                 SizedBox(
@@ -44,7 +45,7 @@ class CustomAppbar extends StatelessWidget {
                 MenuButton(
                   menu: 'ABOUT',
                   onPressed: () {
-                    context.goNamed('about');
+                    context.goNamed(CustomRouter.aboutPath);
                   },
                 ),
                 SizedBox(
@@ -53,7 +54,7 @@ class CustomAppbar extends StatelessWidget {
                 MenuButton(
                   menu: 'PROJECT',
                   onPressed: () {
-                    context.goNamed('project');
+                    context.goNamed(CustomRouter.projectPath);
                   },
                 )
               ],

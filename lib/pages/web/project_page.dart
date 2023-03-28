@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:randy_portofolio/theme_manager/asset_manager.dart';
-import 'package:randy_portofolio/widgets/project_card.dart';
+import '../../theme_manager/asset_manager.dart';
+import '../../utils/launch_url.dart';
+import '../../widgets/category_project.dart';
+import '../../widgets/project_card.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
-import '../utils/launch_url.dart';
-import '../widgets/category_project.dart';
 
 class ProjectPage extends StatelessWidget {
   const ProjectPage({super.key});

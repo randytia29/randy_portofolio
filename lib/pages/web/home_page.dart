@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:randy_portofolio/widgets/home_left_side.dart';
-import 'package:randy_portofolio/widgets/home_right_side.dart';
+import '../../widgets/home_left_side.dart';
+import '../../widgets/home_right_side.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

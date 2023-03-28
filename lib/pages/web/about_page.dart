@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:randy_portofolio/widgets/detail_about.dart';
+import '../../utils/launch_url.dart';
+import '../../widgets/detail_about.dart';
+import '../../widgets/experience_work.dart';
+import '../../widgets/skill.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
-import '../utils/launch_url.dart';
-import '../widgets/experience_work.dart';
-import '../widgets/skill.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
