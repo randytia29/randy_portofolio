@@ -8,4 +8,12 @@ class LaunchURL {
       await launchUrl(uri);
     }
   }
+
+  static Future<void> openMail(String email) async {
+    final uri = Uri.parse('mailto://$email');
+
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri);
+    }
+  }
 }

@@ -33,9 +33,8 @@ class ContactWhatsapp extends StatelessWidget {
                 borderRadius: BorderRadius.circular(50),
               ),
             ),
-            onPressed: () async {
-              await LaunchURL.openURL('wa.me/$phoneNumber');
-            },
+            onPressed: () async =>
+                await LaunchURL.openURL('wa.me/$phoneNumber'),
             child: const FaIcon(FontAwesomeIcons.whatsapp),
           ),
         )
