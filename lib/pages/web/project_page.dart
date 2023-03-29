@@ -40,14 +40,14 @@ class ProjectPage extends StatelessWidget {
                   imageProject: AssetManager.pesonaNgaliyanHebat,
                   onTap: () async {
                     await LaunchURL.openURL(
-                        'https://play.google.com/store/apps/details?id=com.hebat.kecamatanngaliyan.pesonangaliyanhebat');
+                        'play.google.com/store/apps/details?id=com.hebat.kecamatanngaliyan.pesonangaliyanhebat');
                   },
                 ),
                 ProjectCard(
                   imageProject: AssetManager.glowStore,
                   onTap: () async {
                     await LaunchURL.openURL(
-                        'https://play.google.com/store/apps/details?id=com.ecclesion.ella');
+                        'play.google.com/store/apps/details?id=com.ecclesion.ella');
                   },
                 ),
                 const ProjectCard(
@@ -63,7 +63,7 @@ class ProjectPage extends StatelessWidget {
                   imageProject: AssetManager.hib,
                   onTap: () async {
                     await LaunchURL.openURL(
-                        'https://play.google.com/store/apps/details?id=com.abarobotics.officetembalangmobile');
+                        'play.google.com/store/apps/details?id=com.abarobotics.officetembalangmobile');
                   },
                 ),
                 const ProjectCard(

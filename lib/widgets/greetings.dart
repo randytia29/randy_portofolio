@@ -25,7 +25,6 @@ class Greetings extends StatelessWidget {
                 'I build powerful and highly scalable applications using Flutter.',
             style: TextStyle(
               fontSize: 20.sp,
-              fontWeight: FontWeight.w400,
             ),
           )
         ],

@@ -4,12 +4,12 @@ import 'package:randy_portofolio/theme_manager/space_manager.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 import '../../theme_manager/color_manager.dart';
-import '../../widgets/dash_bird.dart';
 import '../../widgets/description.dart';
 import '../../widgets/greetings.dart';
+import '../../widgets/header.dart';
 
-class MobileHomePage extends StatelessWidget {
-  const MobileHomePage({super.key});
+class PwaHomePage extends StatelessWidget {
+  const PwaHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class MobileHomePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const DashBird(),
+                const Header(),
                 const Divider(),
                 const Greetings(),
                 32.h.spaceY,

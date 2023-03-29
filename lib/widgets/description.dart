@@ -24,7 +24,6 @@ class Description extends StatelessWidget {
                 'I will help you build a responsive application with all devices, I use Bloc state management and atomic design.',
             style: TextStyle(
               fontSize: 20.sp,
-              fontWeight: FontWeight.w400,
             ),
           )
         ],

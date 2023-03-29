@@ -66,7 +66,7 @@ class AboutPage extends StatelessWidget {
               subtitle: 'https://www.linkedin.com/in/randytia-akbar-bbb5aa93/',
               onTap: () async {
                 await LaunchURL.openURL(
-                    'https://www.linkedin.com/in/randytia-akbar-bbb5aa93/');
+                    'www.linkedin.com/in/randytia-akbar-bbb5aa93/');
               },
             ),
             SizedBox(
