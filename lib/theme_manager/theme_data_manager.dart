@@ -6,7 +6,12 @@ import 'color_manager.dart';
 ThemeData getApplicationThemeData() {
   return ThemeData(
     colorScheme: ColorScheme.fromSeed(seedColor: ColorManager.primary),
-    dividerTheme: DividerThemeData(color: ColorManager.grey, space: 24.h),
+    dividerTheme: DividerThemeData(
+      color: ColorManager.grey,
+      space: 24.h,
+      indent: 40.w,
+      endIndent: 40.w,
+    ),
     useMaterial3: true,
   );
 }

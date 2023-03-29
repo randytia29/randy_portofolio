@@ -15,8 +15,9 @@ class WebBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       height: 600.h,
+      margin: EdgeInsets.symmetric(horizontal: 40.w),
       child: Stack(
         alignment: Alignment.bottomCenter,
         children: [
