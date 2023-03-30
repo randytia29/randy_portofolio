@@ -8,8 +8,8 @@ import '../../theme_manager/color_manager.dart';
 import '../../widgets/description.dart';
 import '../../widgets/greetings.dart';
 import '../../widgets/header.dart';
-import '../../widgets/timeline_works_exp.dart';
 import '../../widgets/web_body.dart';
+import '../../widgets/work_experience.dart';
 
 class PwaHomePage extends StatelessWidget {
   const PwaHomePage({super.key});
@@ -54,35 +54,7 @@ class PwaHomePage extends StatelessWidget {
                   children: [
                     const Description(),
                     32.h.spaceY,
-                    Column(
-                      children: [
-                        Text(
-                          'My Work Experience',
-                          style: TextStyle(
-                            color: ColorManager.black,
-                            fontSize: 30.sp,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                        const TimelineWorksExp(
-                          role: 'Mobile Application Developer',
-                          office: 'ABAROBOTICS',
-                          duration: 'Oct 2021 - Now',
-                          isFirst: true,
-                        ),
-                        const TimelineWorksExp(
-                          role: 'Flutter Developer',
-                          office: 'Imperial Healthtech',
-                          duration: 'Apr 2021 - Aug 2021',
-                        ),
-                        const TimelineWorksExp(
-                          role: 'Flutter Developer',
-                          office: 'Ella Skin Care',
-                          duration: 'Jul 2020 - Apr 2021',
-                          isLast: true,
-                        )
-                      ],
-                    )
+                    const WorkExperience()
                   ],
                 ),
               ),
