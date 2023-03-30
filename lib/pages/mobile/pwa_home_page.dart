@@ -3,12 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:randy_portofolio/theme_manager/space_manager.dart';
 import 'package:randy_portofolio/widgets/short_desc.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:timeline_tile/timeline_tile.dart';
 
 import '../../theme_manager/color_manager.dart';
 import '../../widgets/description.dart';
 import '../../widgets/greetings.dart';
 import '../../widgets/header.dart';
+import '../../widgets/timeline_works_exp.dart';
 import '../../widgets/web_body.dart';
 
 class PwaHomePage extends StatelessWidget {
@@ -39,13 +39,12 @@ class PwaHomePage extends StatelessWidget {
                         // PhotoMe(
                         //   heightPhoto: 450.h,
                         // ),
-                        const Placeholder(),
+                        const Placeholder(), 32.h.spaceY
                       ],
                     );
                   }
                 },
               ),
-              32.h.spaceY,
               Container(
                 color: ColorManager.primary.withOpacity(0.2),
                 width: double.maxFinite,
@@ -65,65 +64,22 @@ class PwaHomePage extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        TimelineTile(
-                          alignment: TimelineAlign.center,
-                          // startChild: Column(
-                          //   crossAxisAlignment: CrossAxisAlignment.start,
-                          //   children: [
-                          //     Text(
-                          //       'Mobile Application Developer',
-                          //       style: TextStyle(
-                          //         fontSize: 20.sp,
-                          //         fontWeight: FontWeight.w500,
-                          //       ),
-                          //     ),
-                          //     Text(
-                          //       'ABAROBOTICS',
-                          //       style: TextStyle(
-                          //         fontSize: 20.sp,
-                          //         fontWeight: FontWeight.w500,
-                          //       ),
-                          //     ),
-                          //     Text(
-                          //       'Oct 2021 - Now',
-                          //       style: TextStyle(
-                          //         fontSize: 20.sp,
-                          //         fontWeight: FontWeight.w500,
-                          //       ),
-                          //     ),
-                          //   ],
-                          // ),
-                          endChild: Padding(
-                            padding: EdgeInsets.only(left: 24.w),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Text(
-                                  'Mobile Application Developer',
-                                  style: TextStyle(
-                                    fontSize: 20.sp,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                Text(
-                                  'ABAROBOTICS',
-                                  style: TextStyle(
-                                    fontSize: 20.sp,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                Text(
-                                  'Oct 2021 - Now',
-                                  style: TextStyle(
-                                    fontSize: 20.sp,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+                        const TimelineWorksExp(
+                          role: 'Mobile Application Developer',
+                          office: 'ABAROBOTICS',
+                          duration: 'Oct 2021 - Now',
                           isFirst: true,
+                        ),
+                        const TimelineWorksExp(
+                          role: 'Flutter Developer',
+                          office: 'Imperial Healthtech',
+                          duration: 'Apr 2021 - Aug 2021',
+                        ),
+                        const TimelineWorksExp(
+                          role: 'Flutter Developer',
+                          office: 'Ella Skin Care',
+                          duration: 'Jul 2020 - Apr 2021',
+                          isLast: true,
                         )
                       ],
                     )

@@ -23,21 +23,11 @@ class ContactWhatsapp extends StatelessWidget {
             fontSize: 20.sp,
           ),
         ),
-        16.w.spaceX,
-        SizedBox(
-          width: 75.h,
-          height: 75.h,
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(50),
-              ),
-            ),
-            onPressed: () async =>
-                await LaunchURL.openURL('wa.me/$phoneNumber'),
-            child: const FaIcon(FontAwesomeIcons.whatsapp),
-          ),
-        )
+        8.w.spaceX,
+        IconButton(
+          onPressed: () async => await LaunchURL.openURL('wa.me/$phoneNumber'),
+          icon: const FaIcon(FontAwesomeIcons.whatsapp),
+        ),
       ],
     );
   }

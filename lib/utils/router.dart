@@ -7,7 +7,7 @@ class CustomRouter {
   static const aboutPath = '/about';
   static const projectPath = '/project';
 
-  static const pwaPath = '/pwa';
+  static const pwaPath = '/';
 
   static GoRouter router = GoRouter(
     routes: [

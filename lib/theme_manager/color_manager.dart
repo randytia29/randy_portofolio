@@ -8,6 +8,7 @@ class ColorManager {
   static Color hover = HexColor.fromHex('#01579B');
   static Color grey = HexColor.fromHex('#F5F4EF');
   static Color black = HexColor.fromHex('#000000');
+  static Color white = HexColor.fromHex('#FFFFFF');
 }
 
 extension HexColor on Color {
