@@ -41,7 +41,8 @@ class PwaHomePage extends StatelessWidget {
                         // PhotoMe(
                         //   heightPhoto: 450.h,
                         // ),
-                        const Placeholder(), 32.h.spaceY
+                        const Placeholder(),
+                        32.h.spaceY
                       ],
                     );
                   }
