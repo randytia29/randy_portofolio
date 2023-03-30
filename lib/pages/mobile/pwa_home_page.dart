@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:randy_portofolio/theme_manager/space_manager.dart';
+import 'package:randy_portofolio/utils/launch_url.dart';
 import 'package:randy_portofolio/widgets/short_desc.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -58,6 +60,59 @@ class PwaHomePage extends StatelessWidget {
                   ],
                 ),
               ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 40.w, vertical: 40.h),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: Text(
+                        'Let\'s Make Something\nAmazing Together.',
+                        style: TextStyle(
+                          fontSize: 60.sp,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Information',
+                            style: TextStyle(
+                              fontSize: 32.sp,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              IconButton(
+                                onPressed: () => LaunchURL.openURL(
+                                    'www.linkedin.com/in/randytia-akbar-bbb5aa93/'),
+                                icon: FaIcon(
+                                  FontAwesomeIcons.linkedin,
+                                  color: ColorManager.primary,
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: () =>
+                                    LaunchURL.openURL('github.com/randytia29'),
+                                icon: FaIcon(
+                                  FontAwesomeIcons.github,
+                                  color: ColorManager.primary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
