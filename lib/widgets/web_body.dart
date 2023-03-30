@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'email_me.dart';
@@ -25,15 +24,20 @@ class WebBody extends StatelessWidget {
             heightPhoto: 500.h,
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [Greetings(), EmailMe(), YearExperience()],
+              Expanded(
+                flex: 2,
+                child: Container(
+                  color: Colors.amber,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [Greetings(), EmailMe(), YearExperience()],
+                  ),
+                ),
               ),
-              SizedBox(
-                width: 300.w,
-                child: const ShortDesc(),
+              Expanded(
+                flex: 1,
+                child: Container(color: Colors.red, child: const ShortDesc()),
               )
             ],
           )

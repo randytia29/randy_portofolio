@@ -3,13 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:randy_portofolio/theme_manager/space_manager.dart';
 import 'package:randy_portofolio/utils/launch_url.dart';
-import 'package:randy_portofolio/widgets/short_desc.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../theme_manager/color_manager.dart';
 import '../../widgets/description.dart';
-import '../../widgets/greetings.dart';
 import '../../widgets/header.dart';
+import '../../widgets/mobile_body.dart';
 import '../../widgets/web_body.dart';
 import '../../widgets/work_experience.dart';
 
@@ -33,18 +32,7 @@ class PwaHomePage extends StatelessWidget {
                       sizingInformation.isTablet) {
                     return const WebBody();
                   } else {
-                    return Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Greetings(), const ShortDesc(),
-                        32.h.spaceY,
-                        // PhotoMe(
-                        //   heightPhoto: 450.h,
-                        // ),
-                        const Placeholder(),
-                        32.h.spaceY
-                      ],
-                    );
+                    return const MobileBody();
                   }
                 },
               ),
