@@ -27,7 +27,7 @@ class TimelineWorksExp extends StatelessWidget {
         iconStyle: isFirst
             ? IconStyle(iconData: Icons.laptop, color: ColorManager.white)
             : null,
-        width: 30.w,
+        width: 30,
       ),
       afterLineStyle: LineStyle(color: ColorManager.primary.withOpacity(0.5)),
       beforeLineStyle: LineStyle(color: ColorManager.primary.withOpacity(0.5)),
@@ -42,22 +42,22 @@ class TimelineWorksExp extends StatelessWidget {
           children: [
             Text(
               role,
-              style: TextStyle(
-                fontSize: 20.sp,
+              style: const TextStyle(
+                fontSize: 14,
                 fontWeight: FontWeight.w500,
               ),
             ),
             Text(
               office,
-              style: TextStyle(
-                fontSize: 20.sp,
+              style: const TextStyle(
+                fontSize: 14,
                 fontWeight: FontWeight.w500,
               ),
             ),
             Text(
               duration,
-              style: TextStyle(
-                fontSize: 20.sp,
+              style: const TextStyle(
+                fontSize: 14,
                 fontWeight: FontWeight.w500,
               ),
             ),

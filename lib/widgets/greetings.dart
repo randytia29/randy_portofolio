@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Greetings extends StatelessWidget {
   const Greetings({
@@ -8,10 +7,10 @@ class Greetings extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return const Text(
       'Hey There,\nI\'m Randy',
       style: TextStyle(
-        fontSize: 65.sp,
+        fontSize: 45,
         fontWeight: FontWeight.w600,
       ),
     );

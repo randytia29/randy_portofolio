@@ -1,5 +1,4 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:randy_portofolio/theme_manager/space_manager.dart';
 
 class YearExperience extends StatelessWidget {
@@ -12,20 +11,16 @@ class YearExperience extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text(
+        const Text(
           '3',
           style: TextStyle(
-            fontSize: 52.sp,
+            fontSize: 40,
             fontWeight: FontWeight.w600,
           ),
         ),
-        8.w.spaceX,
+        4.0.spaceX,
         Text(
           'year\nexperiences'.toUpperCase(),
-          style: TextStyle(
-            fontSize: 16.sp,
-            fontWeight: FontWeight.w500,
-          ),
         )
       ],
     );

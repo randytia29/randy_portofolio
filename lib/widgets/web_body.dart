@@ -27,17 +27,15 @@ class WebBody extends StatelessWidget {
             children: [
               Expanded(
                 flex: 2,
-                child: Container(
-                  color: Colors.amber,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [Greetings(), EmailMe(), YearExperience()],
-                  ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: const [Greetings(), EmailMe(), YearExperience()],
                 ),
               ),
-              Expanded(
+              const Expanded(
                 flex: 1,
-                child: Container(color: Colors.red, child: const ShortDesc()),
+                child: ShortDesc(),
               )
             ],
           )

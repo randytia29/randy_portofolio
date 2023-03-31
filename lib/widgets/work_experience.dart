@@ -1,5 +1,4 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../theme_manager/color_manager.dart';
 import 'timeline_works_exp.dart';
@@ -17,7 +16,7 @@ class WorkExperience extends StatelessWidget {
           'My Work Experience',
           style: TextStyle(
             color: ColorManager.black,
-            fontSize: 30.sp,
+            fontSize: 22,
             fontWeight: FontWeight.w500,
           ),
         ),

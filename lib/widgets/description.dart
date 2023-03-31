@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../theme_manager/color_manager.dart';
 
@@ -14,16 +13,16 @@ class Description extends StatelessWidget {
       text: TextSpan(
         style: TextStyle(
           color: ColorManager.black,
-          fontSize: 30.sp,
+          fontSize: 22,
           fontWeight: FontWeight.w500,
         ),
-        children: [
-          const TextSpan(text: 'What do I help?\n'),
+        children: const [
+          TextSpan(text: 'What do I help?\n'),
           TextSpan(
             text:
                 'I will help you build a responsive application with all devices, I use Bloc state management and atomic design.',
             style: TextStyle(
-              fontSize: 20.sp,
+              fontSize: 14,
             ),
           )
         ],
