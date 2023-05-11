@@ -23,17 +23,17 @@ class WebBody extends StatelessWidget {
           PhotoMe(
             heightPhoto: 500.h,
           ),
-          Row(
+          const Row(
             children: [
               Expanded(
                 flex: 2,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [Greetings(), EmailMe(), YearExperience()],
+                  children: [Greetings(), EmailMe(), YearExperience()],
                 ),
               ),
-              const Expanded(
+              Expanded(
                 flex: 1,
                 child: ShortDesc(),
               )

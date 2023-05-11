@@ -13,9 +13,9 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(top: 24.h, left: 40.w, right: 40.w),
-      child: Row(
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: const [
+        children: [
           DashBird(),
           ContactWhatsapp(
             phoneNumber: '6285640061290',
