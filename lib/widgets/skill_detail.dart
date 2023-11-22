@@ -4,9 +4,9 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 class SkillDetail extends StatelessWidget {
   const SkillDetail({
-    Key? key,
+    super.key,
     required this.title,
-  }) : super(key: key);
+  });
 
   final String title;
 

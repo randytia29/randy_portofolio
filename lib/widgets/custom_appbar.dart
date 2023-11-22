@@ -8,8 +8,8 @@ import 'menu_button.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

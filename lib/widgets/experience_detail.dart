@@ -4,10 +4,10 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 class ExperienceDetail extends StatelessWidget {
   const ExperienceDetail({
-    Key? key,
+    super.key,
     required this.title,
     required this.subtitle,
-  }) : super(key: key);
+  });
 
   final String title;
   final String subtitle;

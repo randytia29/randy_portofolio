@@ -6,8 +6,8 @@ import 'skill_detail.dart';
 
 class Skill extends StatelessWidget {
   const Skill({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

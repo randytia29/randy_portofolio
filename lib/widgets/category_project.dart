@@ -4,10 +4,10 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 class CategoryProject extends StatelessWidget {
   const CategoryProject({
-    Key? key,
+    super.key,
     required this.title,
     required this.projects,
-  }) : super(key: key);
+  });
 
   final String title;
   final List<Widget> projects;
