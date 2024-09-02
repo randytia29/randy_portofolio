@@ -21,10 +21,15 @@ class WorkExperience extends StatelessWidget {
           ),
         ),
         const TimelineWorksExp(
+          role: 'Mobile Developer',
+          office: 'PT Mustika Jaya Lestari',
+          duration: 'Apr 2024 - Now',
+          isFirst: true,
+        ),
+        const TimelineWorksExp(
           role: 'Mobile Application Developer',
           office: 'ABAROBOTICS',
-          duration: 'Oct 2021 - Now',
-          isFirst: true,
+          duration: 'Oct 2021 - Apr 2024',
         ),
         const TimelineWorksExp(
           role: 'Flutter Developer',
