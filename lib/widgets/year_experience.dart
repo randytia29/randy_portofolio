@@ -8,12 +8,14 @@ class YearExperience extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final yearExperience = DateTime.now().difference(DateTime(2020, 7));
+
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Text(
-          '3',
-          style: TextStyle(
+        Text(
+          '${(yearExperience.inDays / 365).toInt()}',
+          style: const TextStyle(
             fontSize: 40,
             fontWeight: FontWeight.w600,
           ),

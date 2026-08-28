@@ -29,8 +29,10 @@ class TimelineWorksExp extends StatelessWidget {
             : null,
         width: 30,
       ),
-      afterLineStyle: LineStyle(color: ColorManager.primary.withOpacity(0.5)),
-      beforeLineStyle: LineStyle(color: ColorManager.primary.withOpacity(0.5)),
+      afterLineStyle:
+          LineStyle(color: ColorManager.primary.withValues(alpha: 0.5)),
+      beforeLineStyle:
+          LineStyle(color: ColorManager.primary.withValues(alpha: 0.5)),
       isFirst: isFirst,
       isLast: isLast,
       alignment: TimelineAlign.center,

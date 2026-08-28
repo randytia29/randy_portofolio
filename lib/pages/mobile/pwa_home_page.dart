@@ -37,7 +37,7 @@ class PwaHomePage extends StatelessWidget {
                 },
               ),
               Container(
-                color: ColorManager.primary.withOpacity(0.2),
+                color: ColorManager.primary.withValues(alpha: 0.2),
                 width: double.maxFinite,
                 padding: EdgeInsets.symmetric(horizontal: 40.w, vertical: 24.h),
                 child: Column(
